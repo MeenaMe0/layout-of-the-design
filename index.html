@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p> hello </p>
+    <div class="parent-box">
+        <span class="child-box-1">
+            <img id="logo-image" src="img/logo.svg" alt="logo image">
+            <img id="background-image" src="img/bg.jpg" alt="placeholder image">
+        </span>
+        <span class="child-box-2">
+            <h1>Get iintoo it today</h1>
+            <h2>There is no charge or obligation upon registration.</h2>
+            <div> 
+                <span> 
+                    <button>Register with Facebook</button>
+                </span>
+                <span> 
+                    <button>Register with LinkedIn</button>
+                </span>
+            </div>
+            <p> or </p>
+            <div> 
+                <form>
+                    <span> 
+                        <input>Email</input>
+                    </span>
+                    <span> 
+                        <input>Phone</input>
+                    </span>
+                </form>
+            </div>
+
+            <h1>What type of investor are you?</h1>
+            <h2>Select the type of investor you are below.</h2>
+            <div>
+                <span>
+                    <input type="radio" name="account-type" value="individual"> Individual
+                </span>
+                <span>
+                    <input type="radio" name="account-type" value="business"> Business
+                </span>
+                <span>
+                    <input type="radio" name="account-type" value="ira"> IRA
+                </span>
+                <span>
+                    <input type="radio" name="account-type" value="trust"> Trust
+                </span>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terms">
+                <span>
+                     <label for="terms">I agree to the terms and receiving notifications frrom iintoo. </label>
+                </span>
+                <span>
+                    <a for="terms" href="https://www.google.com/search?q=2026+Winter+Olympics+women%27s+snowboarding+halfpipe&oi=ddle&noiga=1&ct=460147763&hl=en-GB&source=doodle-ntp&ved=0ahUKEwjhpdXihdSSAxVTdfUHHVaBANIQPQgB">View full terms</a>
+                </span>
+                <button>Create Account</button>
+            </div>
+        </span>
+
+    </div>
 </body>
 </html>

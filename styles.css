@@ -1,3 +1,72 @@
-p {
-    color: red;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Barlow, sans-serif; 
+    background-color: #EFF6FF;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.parent-box {
+    align-items: center;
+    width: min(90%, 1200px);
+    height: min(80%, 700px);
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    background-color: #FFFFFF; /* Assuming the design has a white background for the content area */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow for depth */
+    /* //border-radius: 10px; Optional: rounded corners */
+}
+
+.child-box-1, .child-box-2 {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.child-box-1 {
+    position: relative; /* Essential for absolute positioning of its children */
+    overflow: hidden;
+}
+
+#background-image {
+    object-fit:contain; 
+    align-self: center;
+}
+
+#logo-image {
+    position: absolute; /* Position it relative to .child-box-1 */
+    top: 3%;
+    left: 3%;
+    width: min(20%, 120px); /* Responsive width for logo */
+    display: block; /* Ensures proper sizing */
+    z-index: 2;
+}
+
+
+.child-box-2 {
+    padding-left: max(2%, 20px);
+    padding-right: max(2%, 20px);
+    background-color: #FFFFFF;
+    overflow: hidden;
+    align-items: center;
+}
+
+h1 {
+    font-size: min(4vw, 36px);
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: min(2.5vw, 24px);
+    margin-top: 0;
+    margin-bottom: 20px;
 }
