@@ -18,54 +18,92 @@
         <span class="child-box-2">
             <h1>Get iintoo it today</h1>
             <h2>There is no charge or obligation upon registration.</h2>
-            <div> 
+            
+            <div class="button-row"> 
                 <span> 
-                    <button>Register with Facebook</button>
+                    <button id="Facebook-Res">
+                        <span class="icon-container">
+                            <img id = "icon" src="img\facebook.svg" alt="facebook icon">
+                        </span>
+                        <span class="text-container">
+                            <p class="p-container"> Register with Facebook </p> 
+                        </span>
+                    </button>
                 </span>
                 <span> 
-                    <button>Register with LinkedIn</button>
+                    <button id="LinkedIn-Res">
+                        <span class="icon-container">
+                            <img id = "icon" src="img\linkedin.svg" alt="linkedin icon">
+                        </span>
+                        <span class="text-container">
+                            <p class="p-container"> Register with LinkedIn </p>
+                        </span>
+                    </button>
                 </span>
             </div>
-            <p> or </p>
-            <div> 
-                <form>
-                    <span> 
-                        <input>Email</input>
+
+            <h3 class="section-separator">
+                <span class = 'separator-text'>or</span>
+            </h3>
+
+            <div class="button-row"> 
+                <form class="input-form">
+                    <span class="input-container">
+                        <input type="email" placeholder="Email" class="input">
                     </span>
-                    <span> 
-                        <input>Phone</input>
+                    <span class="input-container">
+                        <input type="tel" placeholder="Phone" class="input">
                     </span>
                 </form>
             </div>
 
-            <h1>What type of investor are you?</h1>
+            <h1 id="invester-type">What type of investor are you?</h1>
             <h2>Select the type of investor you are below.</h2>
-            <div>
-                <span>
-                    <input type="radio" name="account-type" value="individual"> Individual
-                </span>
-                <span>
-                    <input type="radio" name="account-type" value="business"> Business
-                </span>
-                <span>
-                    <input type="radio" name="account-type" value="ira"> IRA
-                </span>
-                <span>
-                    <input type="radio" name="account-type" value="trust"> Trust
-                </span>
+            <div class="radio-group">
+                
+                <label class="radio-item">
+                    <input type="radio" name="account-type" value="individual"> 
+                    Individual
+                    <span class="info-icon" data-tooltip="Personal account for one person">i</span>
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="account-type" value="business"> 
+                    Business
+                    <span class="info-icon" data-tooltip="Corporate or LLC account">i</span>
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="account-type" value="ira"> 
+                    IRA 
+                    <span class="info-icon" data-tooltip="Individual Retirement Account">i</span>
+                </label>
+
+                <label class="radio-item">
+                    <input type="radio" name="account-type" value="trust"> 
+                    Trust
+                    <span class="info-icon" data-tooltip="Fiduciary trust arrangement">i</span>
+                </label>
+
             </div>
 
-            <div>
-                <input type="checkbox" id="terms">
-                <span>
-                     <label for="terms">I agree to the terms and receiving notifications frrom iintoo. </label>
-                </span>
-                <span>
-                    <a for="terms" href="https://www.google.com/search?q=2026+Winter+Olympics+women%27s+snowboarding+halfpipe&oi=ddle&noiga=1&ct=460147763&hl=en-GB&source=doodle-ntp&ved=0ahUKEwjhpdXihdSSAxVTdfUHHVaBANIQPQgB">View full terms</a>
-                </span>
+            <div class="terms-container">
+                <input type="checkbox" id="terms" class="terms-checkbox">
+        
+                <div class="terms-content">
+                    <label for="terms">
+                        I agree to the terms and receiving notifications from iintoo.
+                    </label>
+                    <a class="terms-link" href="https://www.google.com/search?q=terms">
+                        View full terms
+                    </a>
+                </div>
+            </div>
+
+            <div class="create-account-container">
+                <button id="create-account">Create Account</button>
             </div>
         </span>
-
     </div>
 </body>
 </html>
