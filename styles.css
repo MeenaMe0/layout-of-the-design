@@ -22,6 +22,7 @@ h1 {
 }
 
 h2 {
+
     font-size: min(2.5vw, 12px);
     font-weight: 500;
     margin-top: 0;
@@ -88,6 +89,7 @@ h2 {
 #invester-type {
     font-size: min(3.5vw, 30px);
     margin-top: 5%;
+    padding-top: 5%;
 }
 
 /* =========================================
@@ -209,6 +211,11 @@ button {
     white-space: nowrap;
 }
 
+.radio-item:has(input:checked) {
+    color: #96A5B1; /* The color you wanted */
+    font-weight: 600;
+}
+
 .info-icon {
     display: inline-flex;
     justify-content: center;
@@ -216,8 +223,8 @@ button {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 1px solid #999;
-    color: #999;
+    border: 1px solid #AFAFAF;
+    color: #AFAFAF;
     font-size: 10px;
     font-family: serif;
     margin-left: 5px;
@@ -280,7 +287,7 @@ button {
 }
 
 .terms-link {
-    color: #0056b3;
+    color: #3698FB;
     text-decoration: underline;
     cursor: pointer;
     font-weight: 600;
